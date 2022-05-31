@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="index.css">
+    <script src="words.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Sasta Wordle</title>
+    <script src="confetti.js"></script>
+</head>
+<body>
+    <canvas class="confetti-canvas" id="confetti-canvas"></canvas>
+    <div id="winpopup" class="win">
+        <div class="winmessage">
+            <span> HAPPY BIRTHDYAYYYYYYYYY </span>
+            <span id="word"></span>
+            <span> <a href="">click here for epic cool surprises </a> </span>
+            <img src="winphoto.png" height="40%" width="100%">
+        </div>
+    </div>
+    <div id="losepopup" class="lose">
+        <div class="losemessage">
+            <span> Congratulations! You lost. </span>
+            <span id="loseword"></span>
+            <span> <br><a href="">click here for good ending</a> </span>
+        </div>
+    </div>
+    <div class="page">
+        <div class="nav">
+            <h3>Sasta Wordle</h3>
+        </div>
+        <div class="flexflex"> <div id="popup" class="">Not in wordlist</div> </div>
+        <div class="guessing-space">
+            <div id="guess1">
+                <span id="guess1char1">&nbsp</span>
+                <span id="guess1char2">&nbsp</span>
+                <span id="guess1char3">&nbsp</span>
+                <span id="guess1char4">&nbsp</span>
+                <span id="guess1char5">&nbsp</span>
+            </div>
+            <div id="guess2">
+                <span id="guess2char1">&nbsp</span>
+                <span id="guess2char2">&nbsp</span>
+                <span id="guess2char3">&nbsp</span>
+                <span id="guess2char4">&nbsp</span>
+                <span id="guess2char5">&nbsp</span>
+            </div>
+            <div id="guess3">
+                <span id="guess3char1">&nbsp</span>
+                <span id="guess3char2">&nbsp</span>
+                <span id="guess3char3">&nbsp</span>
+                <span id="guess3char4">&nbsp</span>
+                <span id="guess3char5">&nbsp</span>
+            </div>
+            <div id="guess4">
+                <span id="guess4char1">&nbsp</span>
+                <span id="guess4char2">&nbsp</span>
+                <span id="guess4char3">&nbsp</span>
+                <span id="guess4char4">&nbsp</span>
+                <span id="guess4char5">&nbsp</span>
+            </div>
+            <div id="guess5">
+                <span id="guess5char1">&nbsp</span>
+                <span id="guess5char2">&nbsp</span>
+                <span id="guess5char3">&nbsp</span>
+                <span id="guess5char4">&nbsp</span>
+                <span id="guess5char5">&nbsp</span>
+            </div>
+            <div id="guess6">
+                <span id="guess6char1">&nbsp</span>
+                <span id="guess6char2">&nbsp</span>
+                <span id="guess6char3">&nbsp</span>
+                <span id="guess6char4">&nbsp</span>
+                <span id="guess6char5">&nbsp</span>
+            </div>
+
+        </div>
+        <div id="keyboard" class="keyboard">
+            <div id="row1">
+
+            </div>
+            <div id="row2">
+
+            </div>
+            <div id="row3">
+
+            </div>
+            <div class="funcbuttons">
+                <button id="submit">submit</button>
+                <button id="backspace"><img src="icons/backspace.png" height="20px" width="20px"></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
